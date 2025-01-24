@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Manager</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #6200ea;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background: white;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        section {
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            border-bottom: 2px solid #6200ea;
+            padding-bottom: 0.5rem;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 0.5rem 0;
+            padding: 0.5rem;
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        li a, li button {
+            padding: 0.5rem 1rem;
+            border: none;
+            background: #6200ea;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        li a:hover, li button:hover {
+            background: #4500b3;
+        }
+
+        .actions button {
+            margin-right: 0.5rem;
+            padding: 0.5rem 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>App Manager</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Apps</h2>
+            <ul>
+                <li>Spotify <a href="https://download.scdn.co/SpotifySetup.exe" target="_blank">Download</a></li>
+                <li>Discord <a href="https://discord.com/api/downloads/distributions/app/installers/latest?channel=stable&platform=win&arch=x64" target="_blank">Download</a></li>
+                <li>Vencord <a href="https://github.com/Vencord/Installer/releases/latest/download/VencordInstaller.exe" target="_blank">Download</a></li>
+                <li>Steam <a href="https://cdn.cloudflare.steamstatic.com/client/installer/SteamSetup.exe" target="_blank">Download</a></li>
+                <li>AyuGram <a href="https://github.com/AyuGram/AyuGramDesktop/releases/download/v5.10.3/AyuGram.exe" target="_blank">Download</a></li>
+                <li>SteelSeries GG <button>In Development</button></li>
+                <li>OperaGX <a href="https://www.opera.com/ru/computer/thanks?ni=eapgx&os=windows" target="_blank">Download</a></li>
+                <li>Google Chrome <a href="https://www.google.com/intl/ru/chrome/next-steps.html?statcb=1&installdataindex=empty&defaultbrowser=0#" target="_blank">Download</a></li>
+                <li>VS Code <a href="https://code.visualstudio.com/download#" target="_blank">Download</a></li>
+                <li>CapCut <a href="https://lf16-capcut.faceulv.com/obj/capcutpc-packages-us/installer/capcut_capcutpc_0_1.2.6_installer.exe" target="_blank">Download</a></li>
+                <li>Adobe Premiere <button>In Development</button></li>
+                <li>Vegas Pro <button>In Development</button></li>
+                <li>NVIDIA App <a href="https://us.download.nvidia.com/nvapp/client/11.0.1.189/NVIDIA_app_v11.0.1.189.exe" target="_blank">Download</a></li>
+                <li>LightShot <a href="https://app.prntscr.com/build/setup-lightshot.exe" target="_blank">Download</a></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Actions</h2>
+            <div class="actions">
+                <button onclick="optimizePerformance()">Optimize Performance</button>
+                <button onclick="cleanTempFiles()">Clean Temporary Files</button>
+                <button onclick="activateWindows()">Activate Windows</button>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function optimizePerformance() {
+            alert("Optimizing performance... (this is a placeholder)");
+        }
+
+        function cleanTempFiles() {
+            alert("Cleaning temporary files... (this is a placeholder)");
+        }
+
+        function activateWindows() {
+            alert("Activating Windows... (this is a placeholder)");
+        }
+    </script>
+</body>
+</html>
